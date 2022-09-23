@@ -1,0 +1,67 @@
+.hero_accueil{
+
+    margin: var(--spacing-xl);
+
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+
+
+
+.hero_content{
+   
+    
+
+    h1{
+        color: var(--color-quaternary);
+        font-family: var(--font-primary);
+    }
+
+    h5{
+        color: var(--color-quaternary);
+        font-family: var(--font-secondary);
+        font-weight: 200;
+        margin: var(--spacing-lg) 0 var(--spacing-sm) 0;
+    }
+
+    hr{
+        border-top: 10px solid var(--color-secondary);
+        
+        &.under_decouvrir{
+            margin: 0;
+            width: 24%;
+        }
+        &.under_projets{
+            margin: 0;
+            width: 16%;
+        }
+       
+    }
+}
+
+
+.hero_media{
+position: relative;
+    .hero_image{
+        
+        background: grey;
+        width: 950px;
+        height: 575px;
+       
+    }
+
+    .hero_cadre{
+        position: absolute;
+        width: 950px;
+        height: 575px;
+        border: 10px solid var(--color-secondary);
+        top: -8% ;
+        left: 5%;
+        z-index: -1;
+    }
+
+}
