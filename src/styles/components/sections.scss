@@ -99,14 +99,18 @@
 }
 
 .projets_card_right {
+  display: flex;
   .card_left {
     background: var(--color-tertiary-dark);
     width: 25%;
+    padding: var(--spacing-md) var(--spacing-sm);
   }
 
   .card_right {
     width: 75%;
-    background: var(--color-quarternary-dark);
+    background: var(--color-quaternary-dark);
+    padding: 10px;
+    text-align: center;
   }
 
   .icone_programme {
