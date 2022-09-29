@@ -98,22 +98,110 @@
   }
 }
 
+.projet_right_border {
+  position: absolute;
+  z-index: -2;
+  bottom: -5%;
+  left: 5%;
+  height: 110%;
+  width: 90%;
+  border-bottom: 10px solid var(--color-secondary);
+  border-left: 10px solid var(--color-secondary);
+}
+
+.projet_left_border {
+  position: absolute;
+  z-index: -2;
+  bottom: -5%;
+  right: 5%;
+  height: 110%;
+  width: 90%;
+  border-bottom: 10px solid var(--color-secondary);
+  border-right: 10px solid var(--color-secondary);
+}
+
 .projets_card_right {
   display: flex;
+  position: relative;
+  margin: 0 0 var(--spacing-xxl) 0;
   .card_left {
     background: var(--color-tertiary-dark);
-    width: 25%;
+    width: 35%;
     padding: var(--spacing-md) var(--spacing-sm);
+
+    h4 {
+      margin: 0 0 var(--spacing-xs) 0;
+    }
+
+    h5 {
+      color: var(--color-secondary);
+    }
   }
 
   .card_right {
-    width: 75%;
+    width: 65%;
     background: var(--color-quaternary-dark);
     padding: 10px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.projets_card_left {
+  display: flex;
+  position: relative;
+  margin: 0 0 var(--spacing-xxl) 0;
+  .card_left {
+    width: 65%;
+    background: var(--color-quaternary-dark);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .icone_programme {
-    display: flex;
+  .card_right {
+    background: var(--color-tertiary-dark);
+    width: 35%;
+    padding: var(--spacing-md) var(--spacing-sm);
+
+    h4 {
+      margin: 0 0 var(--spacing-xs) 0;
+    }
+
+    h5 {
+      color: var(--color-secondary);
+      margin: 0 0 var(--spacing-sm) 0;
+    }
+  }
+}
+
+.icone_programme {
+  display: flex;
+  margin: var(--spacing-lg) 0 0 0;
+  svg {
+    width: 80px;
+    height: 80px;
+    color: var(--color-quaternary);
+    margin: 0 var(--spacing-md) 0 0;
+  }
+}
+
+.button_card {
+  display: flex;
+  margin: var(--spacing-xxl) 0 48px 0;
+
+  a {
+    text-align: center;
+    margin: 0 var(--spacing-md) 0 0;
+    background: var(--color-quaternary);
+    padding: var(--spacing-sm) 48px;
+    border-radius: 10px;
+
+    &:hover {
+      color: var(--color-neutral-dark);
+      background: var(--color-secondary);
+    }
   }
 }
