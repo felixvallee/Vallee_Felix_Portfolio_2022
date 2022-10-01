@@ -219,8 +219,9 @@
     h1 {
       margin: 0 0 0 0;
     }
-    h3 {
+    h2 {
       color: var(--color-secondary);
+      font-size: var(--font-size-h3);
     }
 
     p {
@@ -262,7 +263,7 @@
 }
 
 .modus {
-  margin: var(--spacing-xxl) 0;
+  margin: var(--spacing-xxl) 0 256px 0;
   hr {
     border-top: 9px solid var(--color-secondary);
     border-bottom: 1px solid var(--color-secondary);
@@ -270,10 +271,11 @@
     margin: 0;
   }
 
-  p {
+  h3 {
     font-size: var(--font-size-button);
     font-family: var(--font-secondary);
     color: var(--color-quaternary);
+    margin: var(--spacing-sm) 0 0 0;
   }
 
   div {
@@ -305,7 +307,14 @@
 .competences {
   .cards:nth-child(2) {
     .card_competence {
+      flex-direction: row;
+      justify-content: space-around;
       grid-column: span 3;
+
+      .icon {
+        width: 80px;
+        height: 80px;
+      }
     }
   }
 
@@ -318,6 +327,9 @@
     margin: 0 0 180px 0;
 
     .card_texte {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       border-radius: 15px;
       grid-column: span 2;
       background: var(--color-quaternary);
@@ -345,6 +357,13 @@
         height: 128px;
       }
 
+      span {
+        p {
+          margin: 0;
+          font-size: var(--font-size-content-secondary);
+        }
+      }
+
       p {
         margin: var(--spacing-xs) 0 0 0;
       }
@@ -369,6 +388,61 @@
       width: 55%;
       top: -15%;
       right: 3%;
+    }
+  }
+}
+
+.experience {
+  h3 {
+  }
+
+  h4 {
+    font-size: var(--font-size-h1);
+    margin: var(--spacing-md) 0 var(--spacing-xl) 0;
+    span {
+      color: var(--color-secondary);
+    }
+  }
+}
+
+.apprentissage {
+  margin: var(--spacing-xxl) 0 256px 0;
+  hr {
+    border-top: 9px solid var(--color-secondary);
+    border-bottom: 1px solid var(--color-secondary);
+    width: 35%;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: var(--font-size-button);
+    font-family: var(--font-secondary);
+    color: var(--color-quaternary);
+    margin: var(--spacing-sm) 0 0 0;
+  }
+
+  div {
+    margin: var(--spacing-xl) 0 0 0;
+
+    h4 {
+      color: var(--color-tertiary-light);
+    }
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .right {
+    margin: var(--spacing-lg) 0 0 0;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .icon {
+      color: var(--color-secondary);
+      width: 128px;
+      height: 128px;
     }
   }
 }
