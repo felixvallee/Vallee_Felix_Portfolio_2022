@@ -1,25 +1,29 @@
-header nav{
-    ul{
-        display: flex;
-        justify-content: space-around;
-        list-style: none;
+header nav {
+  ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
 
-        li{
-            color: var(--color-secondary);
-            padding: 8px 16px;
-
-            &:hover{
-                background: var(--color-quaternary);
-                padding: 8px 16px;
-                color: var(--color-tertiary-dark);
-                border-radius: 10px;
-            }    
-            
-            a{
-                font-size: var(--font-size-button);
-            }
-        }
+    .icon {
+      height: var(--spacing-lg);
+      width: var(--spacing-lg);
     }
 
+    li {
+      color: var(--color-secondary);
 
+      a {
+        font-size: var(--font-size-button);
+        padding: var(--spacing-xs) var(--spacing-sm);
+
+        &:hover {
+          background: var(--color-quaternary);
+          padding: var(--spacing-xs) var(--spacing-sm);
+
+          color: var(--color-tertiary-dark);
+          border-radius: 10px;
+        }
+      }
+    }
+  }
 }
