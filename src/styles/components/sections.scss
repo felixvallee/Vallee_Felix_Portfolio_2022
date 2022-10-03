@@ -198,11 +198,34 @@
     margin: 0 var(--spacing-md) 0 0;
     background: var(--color-quaternary);
     padding: var(--spacing-sm) 48px;
-    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 300ms ease-in-out;
+    border-radius: 15px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 0;
+      transform: translateY(-100%);
+      background: var(--color-quaternary);
+      z-index: -1;
+      transition: all 300ms ease-in-out;
+      border-radius: 15px;
+    }
 
     &:hover {
       color: var(--color-neutral-dark);
       background: var(--color-secondary);
+      &::after {
+        height: 100%;
+        border-radius: 15px;
+      }
     }
   }
 }
@@ -494,18 +517,9 @@
       }
     }
 
-    .button_cv {
-      margin: var(--spacing-lg) 0 0 0;
+    .button_card {
       a {
-        color: var(--color-tertiary-dark);
-        background: var(--color-quaternary);
-        padding: var(--spacing-sm) 48px;
-        border-radius: 15px;
-
-        &:hover {
-          background: var(--color-secondary);
-          color: var(--color-neutral-dark);
-        }
+        color: var(--color-neutral-dark);
       }
     }
   }
