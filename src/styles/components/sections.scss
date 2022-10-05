@@ -621,6 +621,7 @@
     div {
       text-align: left;
       margin: var(--spacing-lg) 0 0 0;
+
       h4 {
         font-size: 24px;
       }
@@ -728,7 +729,7 @@
     }
 
     div {
-      margin: var(--spacing-xl) 0 0 0;
+      margin: var(--spacing-lg) 0 0 0;
 
       h4 {
         font-size: 24px;
@@ -829,7 +830,6 @@
     .wrapper {
       display: flex;
       flex-direction: column-reverse;
-      justify-content: space-between;
     }
 
     .contact_content {
