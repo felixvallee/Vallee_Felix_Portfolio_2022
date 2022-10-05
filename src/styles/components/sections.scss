@@ -951,6 +951,12 @@
     margin: var(--spacing-xxl) 0;
 
     .cards {
+      .card_texte {
+        p {
+          font-size: 24px;
+        }
+      }
+
       .border_competence_left {
         height: 106%;
         width: 94%;
@@ -984,6 +990,7 @@
 
   .apprentissage {
     margin: var(--spacing-xl) 0 128px 0;
+
     hr {
       width: 80%;
     }
@@ -997,21 +1004,6 @@
 
       h4 {
         font-size: 18px;
-      }
-    }
-
-    .center {
-      text-align: left;
-    }
-
-    .right {
-      margin: var(--spacing-lg) 0 0 0;
-      text-align: left;
-      align-items: flex-start;
-      flex-direction: column-reverse;
-
-      .icon {
-        margin: var(--spacing-lg) 0 0 0;
       }
     }
   }
@@ -1107,6 +1099,31 @@
       p {
         font-size: var(--font-size-h5);
         color: var(--color-quaternary);
+      }
+    }
+  }
+}
+
+/* Contact - Mobile */
+
+@media only screen and (max-width: 375px) {
+  .contact {
+    margin: var(--spacing-xl) 0;
+    .wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .contact_content {
+      margin: var(--spacing-lg) 0;
+      h1 {
+        font-size: var(--font-size-h4);
+      }
+      hr {
+        margin: var(--spacing-sm) 0 0 0;
+      }
+      p {
+        font-size: 24px;
       }
     }
   }
