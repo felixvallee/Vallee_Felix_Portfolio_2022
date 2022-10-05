@@ -2,7 +2,9 @@ header nav {
   ul {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     list-style: none;
+    padding: 0;
 
     .icon {
       height: var(--spacing-lg);
@@ -43,6 +45,25 @@ header nav {
             width: 100%;
             border-radius: 15px;
           }
+        }
+      }
+    }
+  }
+}
+
+/* Tablette */
+
+@media only screen and (max-width: 768px) {
+  header nav {
+    ul {
+      justify-content: space-between;
+      .icon {
+        height: 48px;
+        width: 48px;
+      }
+      li {
+        a {
+          font-size: 20px;
         }
       }
     }
