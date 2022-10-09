@@ -31,3 +31,23 @@ footer {
     }
   }
 }
+
+@media only screen and (max-width: 375px) {
+  footer {
+    .wrapper {
+      justify-content: center;
+    }
+    .footer_copyright {
+      display: none;
+    }
+    .footer_reseaux {
+      display: flex;
+      justify-content: space-around;
+      .icon {
+        margin: 0 24px;
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+}

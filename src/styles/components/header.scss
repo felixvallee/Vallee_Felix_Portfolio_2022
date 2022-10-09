@@ -14,7 +14,7 @@ header nav {
     li {
       color: var(--color-secondary);
 
-      a {
+      .hover {
         font-size: var(--font-size-button);
         padding: var(--spacing-xs) var(--spacing-sm);
         position: relative;
@@ -62,7 +62,7 @@ header nav {
         width: 48px;
       }
       li {
-        a {
+        .hover {
           font-size: 20px;
         }
       }
@@ -98,7 +98,7 @@ header nav {
         &:nth-of-type(5) {
           order: 5;
         }
-        a {
+        .hover {
           font-size: 16px;
         }
       }
