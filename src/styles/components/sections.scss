@@ -218,7 +218,7 @@
   position: relative;
   margin: 0 0 var(--spacing-xxl) 0;
   .card_left {
-    background: var(--color-tertiary-dark);
+    background: var(--color-tertiary);
     width: 35%;
     padding: var(--spacing-md) var(--spacing-sm);
     border-radius: 15px 0 0 15px;
@@ -229,6 +229,10 @@
 
     h5 {
       color: var(--color-secondary);
+    }
+
+    p {
+      color: var(--color-quaternary);
     }
   }
 
@@ -258,7 +262,7 @@
   }
 
   .card_right {
-    background: var(--color-tertiary-dark);
+    background: var(--color-tertiary);
     width: 35%;
     padding: var(--spacing-md) var(--spacing-sm);
     border-radius: 0 15px 15px 0;
@@ -270,6 +274,10 @@
     h5 {
       color: var(--color-secondary);
       margin: 0 0 var(--spacing-sm) 0;
+    }
+
+    p {
+      color: var(--color-quaternary);
     }
   }
 }
@@ -291,6 +299,8 @@
 
   a {
     text-align: center;
+    color: var(--color-tertiary-dark);
+    font-weight: 700;
     margin: 0 var(--spacing-md) 0 0;
     background: var(--color-quaternary);
     padding: var(--spacing-sm) 48px;
@@ -505,7 +515,7 @@
     position: relative;
     .hero_image {
       img {
-        background: var(--color-tertiary-dark);
+        background: var(--color-tertiary);
       }
     }
 
@@ -609,7 +619,7 @@
       border-radius: 15px;
 
       color: var(--color-white);
-      background: var(--color-tertiary-dark);
+      background: var(--color-tertiary);
 
       .icon {
         width: 128px;
@@ -830,12 +840,12 @@
 
   .experience {
     h3 {
-      font-size: var(--font-size-h4);
+      font-size: 24px;
     }
 
     h4 {
-      font-size: var(--font-size-h2);
-      margin: var(--spacing-md) 0 var(--spacing-xl) 0;
+      font-size: var(--font-size-h4);
+      margin: var(--spacing-md) 0 var(--spacing-lg) 0;
       span {
         color: var(--color-secondary);
       }
@@ -843,7 +853,7 @@
   }
 
   .apprentissage {
-    margin: var(--spacing-xxl) 0 128px 0;
+    margin: var(--spacing-xl) 0 128px 0;
     hr {
       width: 80%;
     }
@@ -1067,7 +1077,7 @@
   position: relative;
   .contact_image {
     display: flex;
-    background: var(--color-tertiary-dark);
+    background: var(--color-tertiary);
   }
   .contact_cadre {
     position: absolute;
@@ -1123,6 +1133,16 @@
         margin: var(--spacing-sm) 0 0 0;
       }
       p {
+        font-size: 24px;
+      }
+    }
+
+    .contact_type {
+      .icon {
+        width: 36px;
+        height: 36px;
+      }
+      a {
         font-size: 24px;
       }
     }

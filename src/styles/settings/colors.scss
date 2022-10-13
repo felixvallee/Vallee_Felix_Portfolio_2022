@@ -3,31 +3,34 @@
    ========================================================================== */
 
 :root {
-    // Couleur de base
-    --color-white: #fff;
-    --color-black: #000;
+  // Couleur de base
+  --color-white: #fff;
+  --color-black: #000;
 
-    // Couleurs du projet
-    --color-primary: #373737;
-    --color-primary-light: #555455;
-    --color-primary-dark: #191819;
+  // Couleurs du projet
+  --color-primary: #373737;
+  --color-primary-light: #555455;
+  --color-primary-dark: #191819;
 
-    --color-secondary: #EDDC60;
-    --color-secondary-light: #FFFA7E;
-    --color-secondary-dark: #CDBC41;
+  --color-secondary: #eddc60;
+  --color-secondary-light: #fffa7e;
+  --color-secondary-dark: #cdbc41;
 
-    --color-tertiary : #9598AD;
-    --color-tertiary-light : #B3B6CB;
-    --color-tertiary-dark : #777A8F;
+  --color-tertiary: #575558;
+  --color-tertiary-light: #757376;
+  --color-tertiary-dark: #39373a;
 
-    --color-quaternary: #F2F2F2 ;
-    --color-quaternary-light: #FFFFFF ;
-    --color-quaternary-dark: #D4D4D4 ;
+  --color-quaternary: #f2f2f2;
+  --color-quaternary-light: #ffffff;
+  --color-quaternary-dark: #d4d4d4;
 
-    --color-neutral-light: #E3E3E3;
-    --color-neutral-dark: #2E2E3A;
+  --color-neutral-light: #e3e3e3;
+  --color-neutral-dark: #2e2e3a;
 
-    --color-background: radial-gradient(var(--color-primary), var(--color-primary-dark));
+  --color-background: radial-gradient(
+    var(--color-primary),
+    var(--color-primary-dark)
+  );
 
-    --color-fail: #f6511d;
+  --color-fail: #f6511d;
 }
