@@ -223,12 +223,14 @@
     padding: var(--spacing-md) var(--spacing-sm);
     border-radius: 15px 0 0 15px;
 
-    h4 {
+    h2 {
       margin: 0 0 var(--spacing-xs) 0;
+      font-size: var(--font-size-h4);
     }
 
-    h5 {
+    h3 {
       color: var(--color-secondary);
+      font-size: var(--font-size-h5);
     }
 
     p {
@@ -267,13 +269,15 @@
     padding: var(--spacing-md) var(--spacing-sm);
     border-radius: 0 15px 15px 0;
 
-    h4 {
+    h2 {
       margin: 0 0 var(--spacing-xs) 0;
+      font-size: var(--font-size-h4);
     }
 
-    h5 {
+    h3 {
       color: var(--color-secondary);
       margin: 0 0 var(--spacing-sm) 0;
+      font-size: var(--font-size-h5);
     }
 
     p {
