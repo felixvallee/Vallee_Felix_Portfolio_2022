@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 
+
 <head>
     <meta charset="utf-8" />
     <meta name="msapplication-TileColor" content="#da532c" />
@@ -27,28 +28,39 @@
 
 
 <body data-component="Scrolly">
-    <header>
+    <header class="header" data-component="Header">
         <div class="wrapper">
-            <nav>
+            <a href="index.html" class="header__brand">
+                <svg class="icon">
+                    <use xlink:href="#icon-Logo_FLX"></use>
+                </svg>
+            </a>
+            <nav class="nav-primary">
                 <ul>
-                    <li><a href="index.html" class="hover">Accueil</a></li>
-                    <li><a href="projets.html" class="hover">Mes projets</a></li>
+                    <li><a href="index.html" class="hover nav-primary__item">Accueil</a></li>
+                    <li><a href="projets.html" class="hover nav-primary__item">Mes projets</a></li>
                     <li>
-                        <a class="order" href="index.html" aria-label="Lien pour Accueil">
-                            <svg class="icon">
-                                <use xlink:href="#icon-Logo_FLX"></use>
-                            </svg>
-                        </a>
+
+                        <svg class="icon">
+                            <use xlink:href="#icon-Logo_FLX"></use>
+                        </svg>
+
                     </li>
-                    <li><a href="propos.html" class="hover">À propos</a></li>
-                    <li><a href="contact.html" class="hover">Contactez-moi</a></li>
+                    <li><a href="propos.html" class="hover nav-primary__item">À propos</a></li>
+                    <li><a href="contact.html" class="hover nav-primary__item">Contactez-moi</a></li>
                 </ul>
             </nav>
+            <button class="header__toggle js-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 </body>
 
 </html>
+
 
 <div class="contact">
     <div class="wrapper">
