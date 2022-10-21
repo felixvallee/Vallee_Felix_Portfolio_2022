@@ -57,7 +57,7 @@
 }
 /* Tablette */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .header {
     .wrapper {
       display: flex;
@@ -72,9 +72,10 @@
     }
     nav {
       ul {
-        justify-content: space-between;
+        justify-content: center;
 
         li {
+          margin-bottom: var(--spacing-lg);
           .hover {
             font-size: 20px;
           }
@@ -101,10 +102,10 @@
     }
     ul {
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
 
       li {
-        margin: 0 0 24px 0;
+        margin: 0 0 var(--spacing-sm) 0;
 
         &:nth-of-type(3) {
           display: none;
@@ -119,13 +120,13 @@
 }
 
 .header {
-  --header-height: 100px;
+  --header-height-desktop: 100%;
   --logo-width: 200px;
   align-items: center;
   display: flex;
   justify-content: space-between;
   padding: 0 2rem;
-  height: var(--header-height);
+  height: var(--header-height-desktop);
   width: 100%;
   z-index: 10;
   position: sticky;
@@ -144,8 +145,10 @@
     z-index: 2;
   }
 
-  @media screen and (min-width: $breakpoint-md) {
-    padding: calc(var(--spacing-md) / 2) var(--spacing-md);
+  @media screen and (max-width: 768px) {
+    --header-height-mobile: 100px;
+    height: var(--header-height-mobile);
+    padding: calc(var(--spacing-lg) / 2) var(--spacing-md);
     justify-content: center;
   }
 
