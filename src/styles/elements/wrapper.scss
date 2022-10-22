@@ -7,6 +7,25 @@
   width: calc(100% - var(--spacing-md));
   margin: 0 auto;
 
+  @media only screen and (max-width: $breakpoint-lg) {
+    max-width: 1148px;
+  }
+
+  @media only screen and (max-width: 1366px) {
+    max-width: 1088px;
+  }
+
+  @media only screen and (max-width: 960px) {
+    max-width: 764px;
+  }
+  @media only screen and (max-width: 650px) {
+    max-width: 516px;
+  }
+
+  @media only screen and (max-width: $breakpoint-md) {
+    max-width: 816px;
+  }
+
   @media only screen and (max-width: $breakpoint-sm) {
     max-width: 636px;
   }

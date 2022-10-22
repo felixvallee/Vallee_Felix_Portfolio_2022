@@ -19,7 +19,7 @@
         color: var(--color-secondary);
 
         .hover {
-          font-size: var(--font-size-button);
+          font-size: var(--font-size-h5);
           padding: var(--spacing-xs) var(--spacing-sm);
           position: relative;
           overflow: hidden;
@@ -55,9 +55,55 @@
     }
   }
 }
-/* Tablette */
 
+/* Laptop */
 @media only screen and (max-width: 1024px) {
+  .header {
+    nav {
+      ul {
+        li {
+          .hover {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Tablette */
+@media only screen and (max-width: 1023px) {
+  .header {
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+    .header__brand {
+      display: block;
+      .icon {
+        width: 48px;
+        height: 48px;
+      }
+    }
+    nav {
+      ul {
+        justify-content: center;
+
+        li {
+          margin-bottom: var(--spacing-lg);
+          .hover {
+            font-size: 20px;
+          }
+          &:nth-child(3) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .header {
     .wrapper {
       display: flex;
@@ -145,7 +191,7 @@
     z-index: 2;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1023px) {
     --header-height-mobile: 100px;
     height: var(--header-height-mobile);
     padding: calc(var(--spacing-lg) / 2) var(--spacing-md);
