@@ -22,10 +22,19 @@
     <link rel="stylesheet" href="styles/main.css" />
 
     <script src="scripts/main.js" defer></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-91DB7R7RVH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-91DB7R7RVH");
+    </script>
 </head>
-
-
-
 
 <body data-component="Scrolly">
     <header class="header" data-component="Header">
@@ -37,17 +46,23 @@
             </a>
             <nav class="nav-primary">
                 <ul>
-                    <li><a href="index.html" class="hover nav-primary__item">Accueil</a></li>
-                    <li><a href="projets.html" class="hover nav-primary__item">Mes projets</a></li>
                     <li>
-
+                        <a href="index.html" class="hover nav-primary__item">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="projets.html" class="hover nav-primary__item">Mes projets</a>
+                    </li>
+                    <li>
                         <svg class="icon">
                             <use xlink:href="#icon-Logo_FLX"></use>
                         </svg>
-
                     </li>
-                    <li><a href="propos.html" class="hover nav-primary__item">À propos</a></li>
-                    <li><a href="contact.html" class="hover nav-primary__item">Contactez-moi</a></li>
+                    <li>
+                        <a href="propos.html" class="hover nav-primary__item">À propos</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="hover nav-primary__item">Contactez-moi</a>
+                    </li>
                 </ul>
             </nav>
             <button class="header__toggle js-toggle">
@@ -57,80 +72,78 @@
             </button>
         </div>
     </header>
-</body>
-
-</html>
 
 
-<div class="contact">
-    <div class="wrapper">
-        <div class="contact_content" data-scrolly="fromLeft">
-            <h1>Contactez-moi</h1>
-            <hr />
-            <p>
-                Et voyons le p’tit bout de chemin que nous pouvons faire vous et moi !
-            </p>
-            <div class="contact_type">
-                <div class="mail">
-                    <svg class="icon">
-                        <use xlink:href="#icon-icone_mail"></use>
-                    </svg>
-                    <a href="mailto:info@felixvallee.ca">info@felixvallee.ca</a>
-                </div>
-                <div class="phone">
-                    <svg class="icon">
-                        <use xlink:href="#icon-icone_phone"></use>
-                    </svg>
-                    <a href="tel:+15145549130">(514) 554-9130</a>
-                </div>
-                <div class="button_card">
-                    <a href="assets/pdf/2022_Vallee_Felix_CV.pdf" class="fill" target="_blank">Télécharger mon CV</a>
+
+    <div class="contact">
+        <div class="wrapper">
+            <div class="contact_content" data-scrolly="fromLeft">
+                <h1>Contactez-moi</h1>
+                <hr />
+                <p>
+                    Et voyons le p’tit bout de chemin que nous pouvons faire vous et moi !
+                </p>
+                <div class="contact_type">
+                    <div class="mail">
+                        <svg class="icon">
+                            <use xlink:href="#icon-icone_mail"></use>
+                        </svg>
+                        <a href="mailto:info@felixvallee.ca">info@felixvallee.ca</a>
+                    </div>
+                    <div class="phone">
+                        <svg class="icon">
+                            <use xlink:href="#icon-icone_phone"></use>
+                        </svg>
+                        <a href="tel:+15145549130">(514) 554-9130</a>
+                    </div>
+                    <div class="button_card">
+                        <a href="assets/pdf/2022_Vallee_Felix_CV.pdf" class="fill" target="_blank">Télécharger mon CV</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="contact_media" data-scrolly="fromRight">
-            <div class="contact_image">
-                <img src="assets/images/Image_Felix_Contact.png" alt="Image de Félix Vallée" />
+            <div class="contact_media" data-scrolly="fromRight">
+                <div class="contact_image">
+                    <img src="assets/images/Image_Felix_Contact.png" alt="Image de Félix Vallée" />
+                </div>
+                <div class="contact_cadre"></div>
             </div>
-            <div class="contact_cadre"></div>
-        </div>
-    </div>
-</div>
-
-<footer>
-
-    <div class="wrapper">
-        <div class="footer_copyright">
-            <a href="index.html">Félix Vallée © - 2022</a>
-        </div>
-
-        <div class="footer_reseaux">
-
-            <a href="https://www.behance.net/felixvallee" target="_blank" aria-label="Profil Behance">
-                <svg class="icon">
-                    <use xlink:href="#icon-logo_behance_border"></use>
-                </svg>
-            </a>
-
-            <a href="https://www.instagram.com/flxvallee/?hl=fr" target="_blank" aria-label="Profil Instagram">
-                <svg class="icon">
-                    <use xlink:href="#icon-logo_instagram_border"></use>
-                </svg>
-            </a>
-
-            <a href="https://www.linkedin.com/in/felix-vallee/" target="_blank" aria-label="Profil LinkedIn">
-                <svg class="icon">
-                    <use xlink:href="#icon-logo_linkedin"></use>
-                </svg>
-            </a>
-
         </div>
     </div>
 
+    <footer>
+
+        <div class="wrapper">
+            <div class="footer_copyright">
+                <a href="index.html">Félix Vallée © - 2022</a>
+            </div>
+
+            <div class="footer_reseaux">
+
+                <a href="https://www.behance.net/felixvallee" target="_blank" aria-label="Profil Behance">
+                    <svg class="icon">
+                        <use xlink:href="#icon-logo_behance_border"></use>
+                    </svg>
+                </a>
+
+                <a href="https://www.instagram.com/flxvallee/?hl=fr" target="_blank" aria-label="Profil Instagram">
+                    <svg class="icon">
+                        <use xlink:href="#icon-logo_instagram_border"></use>
+                    </svg>
+                </a>
+
+                <a href="https://www.linkedin.com/in/felix-vallee/" target="_blank" aria-label="Profil LinkedIn">
+                    <svg class="icon">
+                        <use xlink:href="#icon-logo_linkedin"></use>
+                    </svg>
+                </a>
+
+            </div>
+        </div>
 
 
-</footer>
+
+    </footer>
 
 
 </body>

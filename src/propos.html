@@ -44,6 +44,20 @@
   <link rel="stylesheet" href="styles/main.css" />
 
   <script src="scripts/main.js" defer></script>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-91DB7R7RVH"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-91DB7R7RVH");
+  </script>
 </head>
 
 {% include '_partials/_header.html' %}

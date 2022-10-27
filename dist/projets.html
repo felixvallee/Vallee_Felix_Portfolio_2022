@@ -22,10 +22,19 @@
     <link rel="stylesheet" href="styles/main.css" />
 
     <script src="scripts/main.js" defer></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-91DB7R7RVH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-91DB7R7RVH');
+    </script>
 </head>
-
-
-
 
 <body data-component="Scrolly">
     <header class="header" data-component="Header">
@@ -37,17 +46,23 @@
             </a>
             <nav class="nav-primary">
                 <ul>
-                    <li><a href="index.html" class="hover nav-primary__item">Accueil</a></li>
-                    <li><a href="projets.html" class="hover nav-primary__item">Mes projets</a></li>
                     <li>
-
+                        <a href="index.html" class="hover nav-primary__item">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="projets.html" class="hover nav-primary__item">Mes projets</a>
+                    </li>
+                    <li>
                         <svg class="icon">
                             <use xlink:href="#icon-Logo_FLX"></use>
                         </svg>
-
                     </li>
-                    <li><a href="propos.html" class="hover nav-primary__item">À propos</a></li>
-                    <li><a href="contact.html" class="hover nav-primary__item">Contactez-moi</a></li>
+                    <li>
+                        <a href="propos.html" class="hover nav-primary__item">À propos</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="hover nav-primary__item">Contactez-moi</a>
+                    </li>
                 </ul>
             </nav>
             <button class="header__toggle js-toggle">
@@ -57,209 +72,207 @@
             </button>
         </div>
     </header>
-</body>
-
-</html>
 
 
-<div class="projets_content">
-    <div class="wrapper">
-        <div class="projets_title" data-scrolly="fromLeft">
-            <h1>Mes projets</h1>
-            <hr />
-        </div>
 
-        <div class="projets_cards">
+    <div class="projets_content">
+        <div class="wrapper">
+            <div class="projets_title" data-scrolly="fromLeft">
+                <h1>Mes projets</h1>
+                <hr />
+            </div>
+
+            <div class="projets_cards">
+                <div class="projets_card_right" data-scrolly="fromLeft">
+                    <div class="card_left">
+                        <h2>Vitpilen 701</h2>
+                        <h3>Design et prototypage d’interface One pager</h3>
+                        <p>
+                            Le «one pager» fait la promotion d’un article de la gamme moto
+                            d’Husqvarna. Je me devais de respecter l’image de marque associé au
+                            produit et à Husqvarna.
+                        </p>
+
+                        <div class="icone_programme">
+                            <svg class="icon">
+                                <use xlink:href="#icon-logo_figma"></use>
+                            </svg>
+                            <svg class="icon">
+                                <use xlink:href="#icon-logo_photoshop"></use>
+                            </svg>
+                        </div>
+
+                        <div class="button_card">
+                            <a href="https://www.behance.net/gallery/152567395/Vitpilen-701-Interface-One-pager" target="_blank">Voir sur Behance</a>
+                            <a href="https://www.figma.com/proto/JakfLoxggHlhX42ugwSydr/1031_Vallee_Felix_TP2?node-id=1100%3A355&scaling=scale-down-width&page-id=87%3A5454&starting-point-node-id=1149%3A287" target="_blank">Voir sur Figma</a>
+                        </div>
+                    </div>
+
+                    <div class="card_right">
+                        <picture>
+                            <source srcset="assets/images/Image_Projet_Vitpilen.webp" type="image/webp">
+                            <img src="assets/images/Image_Projet_Vitpilen.png" alt="Mockup projet Vitpilen 701" />
+                        </picture>
+
+                    </div>
+                    <div class="projet_right_border"></div>
+                </div>
+
+
+
+                <div class="projets_card_left" data-scrolly="fromRight">
+                    <div class="card_left">
+                        <img src="assets/images/Image_Projet_Carte.png" alt="Design des cartes d'affaire" />
+                    </div>
+                    <div class="card_right">
+                        <h2>Design de Carte d'affaire FLX Design</h2>
+                        <h3>Animation hybride 2D/3D</h3>
+                        <p>
+                            Le projet présente plusieurs alternatives de cartes d’affaires sous
+                            la forme d’une animation réalisé dans Blender.
+                        </p>
+
+                        <div class="icone_programme">
+                            <svg class="icon">
+                                <use xlink:href="#icon-logo_blender"></use>
+                            </svg>
+                            <svg class="icon">
+                                <use xlink:href="#icon-logo_figma"></use>
+                            </svg>
+                        </div>
+
+                        <div class="button_card">
+                            <a href="https://www.behance.net/gallery/152568991/Carte-daffaire-FLX-Design-Animation-2D3D" target="_blank">Voir sur Behance</a>
+                            <a href="https://www.youtube.com/watch?v=SBoVPudga_c" target="_blank">Voir sur Youtube</a>
+
+                        </div>
+                        <div class="projet_left_border"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
             <div class="projets_card_right" data-scrolly="fromLeft">
                 <div class="card_left">
-                    <h2>Vitpilen 701</h2>
-                    <h3>Design et prototypage d’interface One pager</h3>
+                    <h2>Entrez dans le rêve</h2>
+                    <h3>Design d'interface d'application</h3>
                     <p>
-                        Le «one pager» fait la promotion d’un article de la gamme moto
-                        d’Husqvarna. Je me devais de respecter l’image de marque associé au
-                        produit et à Husqvarna.
+                        Le design se base sur l’image de marque très coloré de l’artiste allemand CRO. L’interface se veut être une application de vente de billets pour les spectacles de l’artiste.
                     </p>
 
                     <div class="icone_programme">
+
                         <svg class="icon">
                             <use xlink:href="#icon-logo_figma"></use>
-                        </svg>
-                        <svg class="icon">
-                            <use xlink:href="#icon-logo_photoshop"></use>
                         </svg>
                     </div>
 
                     <div class="button_card">
-                        <a href="https://www.behance.net/gallery/152567395/Vitpilen-701-Interface-One-pager" target="_blank">Voir sur Behance</a>
-                        <a href="https://www.figma.com/proto/JakfLoxggHlhX42ugwSydr/1031_Vallee_Felix_TP2?node-id=1100%3A355&scaling=scale-down-width&page-id=87%3A5454&starting-point-node-id=1149%3A287" target="_blank">Voir sur Figma</a>
+                        <a href="https://www.behance.net/gallery/152568165/Entrez-dans-le-reve-Interface-dapplication" target="_blank">Voir sur Behance</a>
+                        <a href="https://www.figma.com/proto/uphLhXSUbtSCROG0tK5ako/1012_Vallee_Felix_APPAchatsBillets?node-id=64%3A2&scaling=contain&page-id=0%3A1&starting-point-node-id=64%3A2" target="_blank">Voir sur Figma</a>
                     </div>
                 </div>
 
                 <div class="card_right">
-                    <picture>
-                        <source srcset="assets/images/Image_Projet_Vitpilen.webp" type="image/webp">
-                        <img src="assets/images/Image_Projet_Vitpilen.png" alt="Mockup projet Vitpilen 701" />
-                    </picture>
-
+                    <img src="assets/images/Image_Projet_Cro.png" alt="Mockup projet Entrez dans le rêve" />
                 </div>
                 <div class="projet_right_border"></div>
             </div>
 
-
-
             <div class="projets_card_left" data-scrolly="fromRight">
                 <div class="card_left">
-                    <img src="assets/images/Image_Projet_Carte.png" alt="Design des cartes d'affaire" />
+                    <img src="assets/images/Image_Projet_Recettes.png" alt="Mockup projet Recettes en pot" />
                 </div>
                 <div class="card_right">
-                    <h2>Design de Carte d'affaire FLX Design</h2>
-                    <h3>Animation hybride 2D/3D</h3>
+                    <h2>Recettes en pot</h2>
+                    <h3>Refonte graphique d’un site web avec prototypage avancé</h3>
                     <p>
-                        Le projet présente plusieurs alternatives de cartes d’affaires sous
-                        la forme d’une animation réalisé dans Blender.
+                        Le projet a été développé à l’aide de personnas, de médias et de requêtes fournies par le client. Le projet est resté dans un cadre académique seulement.
                     </p>
 
                     <div class="icone_programme">
-                        <svg class="icon">
-                            <use xlink:href="#icon-logo_blender"></use>
-                        </svg>
                         <svg class="icon">
                             <use xlink:href="#icon-logo_figma"></use>
                         </svg>
                     </div>
 
                     <div class="button_card">
-                        <a href="https://www.behance.net/gallery/152568991/Carte-daffaire-FLX-Design-Animation-2D3D" target="_blank">Voir sur Behance</a>
-                        <a href="https://www.youtube.com/watch?v=SBoVPudga_c" target="_blank">Voir sur Youtube</a>
-
+                        <a href="https://www.behance.net/gallery/152568649/Recettes-en-pot-Refonte-graphique" target="_blank">Voir sur Behance</a>
+                        <a href="https://www.figma.com/proto/nYxyLDW5o5m92FsMRiH2Qa/TP2---F%C3%A9lix-Vall%C3%A9e?node-id=942%3A395&scaling=scale-down-width&page-id=616%3A397&starting-point-node-id=942%3A395" target="_blank">Voir sur Figma</a>
                     </div>
                     <div class="projet_left_border"></div>
                 </div>
 
             </div>
 
-        </div>
 
-        <div class="projets_card_right" data-scrolly="fromLeft">
-            <div class="card_left">
-                <h2>Entrez dans le rêve</h2>
-                <h3>Design d'interface d'application</h3>
-                <p>
-                    Le design se base sur l’image de marque très coloré de l’artiste allemand CRO. L’interface se veut être une application de vente de billets pour les spectacles de l’artiste.
-                </p>
+            <div class="projets_card_right" data-scrolly="fromLeft">
+                <div class="card_left">
+                    <h2>Driveclub</h2>
+                    <h3>Design d’une interface One pager</h3>
+                    <p>
+                        Le design se voulait être sobre tout en respectant l’esthétique de base du jeu vidéo Driveclub. Les couleurs ont été puisées à même l’image pour unifier l’ensemble. </p>
 
-                <div class="icone_programme">
+                    <div class="icone_programme">
 
-                    <svg class="icon">
-                        <use xlink:href="#icon-logo_figma"></use>
-                    </svg>
+                        <svg class="icon">
+                            <use xlink:href="#icon-logo_figma"></use>
+                        </svg>
+                    </div>
+
+                    <div class="button_card">
+                        <a href="https://www.behance.net/gallery/152424863/Driveclub-Interface-One-Pager" target="_blank">Voir sur Behance</a>
+
+                    </div>
                 </div>
 
-                <div class="button_card">
-                    <a href="https://www.behance.net/gallery/152568165/Entrez-dans-le-reve-Interface-dapplication" target="_blank">Voir sur Behance</a>
-                    <a href="https://www.figma.com/proto/uphLhXSUbtSCROG0tK5ako/1012_Vallee_Felix_APPAchatsBillets?node-id=64%3A2&scaling=contain&page-id=0%3A1&starting-point-node-id=64%3A2" target="_blank">Voir sur Figma</a>
+                <div class="card_right">
+                    <img src="assets/images/Image_Projet_Driveclub.png" alt="Mockup projet Driveclub" />
                 </div>
+                <div class="projet_right_border"></div>
             </div>
-
-            <div class="card_right">
-                <img src="assets/images/Image_Projet_Cro.png" alt="Mockup projet Entrez dans le rêve" />
-            </div>
-            <div class="projet_right_border"></div>
-        </div>
-
-        <div class="projets_card_left" data-scrolly="fromRight">
-            <div class="card_left">
-                <img src="assets/images/Image_Projet_Recettes.png" alt="Mockup projet Recettes en pot" />
-            </div>
-            <div class="card_right">
-                <h2>Recettes en pot</h2>
-                <h3>Refonte graphique d’un site web avec prototypage avancé</h3>
-                <p>
-                    Le projet a été développé à l’aide de personnas, de médias et de requêtes fournies par le client. Le projet est resté dans un cadre académique seulement.
-                </p>
-
-                <div class="icone_programme">
-                    <svg class="icon">
-                        <use xlink:href="#icon-logo_figma"></use>
-                    </svg>
-                </div>
-
-                <div class="button_card">
-                    <a href="https://www.behance.net/gallery/152568649/Recettes-en-pot-Refonte-graphique" target="_blank">Voir sur Behance</a>
-                    <a href="https://www.figma.com/proto/nYxyLDW5o5m92FsMRiH2Qa/TP2---F%C3%A9lix-Vall%C3%A9e?node-id=942%3A395&scaling=scale-down-width&page-id=616%3A397&starting-point-node-id=942%3A395" target="_blank">Voir sur Figma</a>
-                </div>
-                <div class="projet_left_border"></div>
-            </div>
-
         </div>
 
 
-        <div class="projets_card_right" data-scrolly="fromLeft">
-            <div class="card_left">
-                <h2>Driveclub</h2>
-                <h3>Design d’une interface One pager</h3>
-                <p>
-                    Le design se voulait être sobre tout en respectant l’esthétique de base du jeu vidéo Driveclub. Les couleurs ont été puisées à même l’image pour unifier l’ensemble. </p>
 
-                <div class="icone_programme">
-
-                    <svg class="icon">
-                        <use xlink:href="#icon-logo_figma"></use>
-                    </svg>
-                </div>
-
-                <div class="button_card">
-                    <a href="https://www.behance.net/gallery/152424863/Driveclub-Interface-One-Pager" target="_blank">Voir sur Behance</a>
-
-                </div>
-            </div>
-
-            <div class="card_right">
-                <img src="assets/images/Image_Projet_Driveclub.png" alt="Mockup projet Driveclub" />
-            </div>
-            <div class="projet_right_border"></div>
-        </div>
+    </div>
+    </div>
     </div>
 
+    <footer>
 
+        <div class="wrapper">
+            <div class="footer_copyright">
+                <a href="index.html">Félix Vallée © - 2022</a>
+            </div>
 
-</div>
-</div>
-</div>
+            <div class="footer_reseaux">
 
-<footer>
+                <a href="https://www.behance.net/felixvallee" target="_blank" aria-label="Profil Behance">
+                    <svg class="icon">
+                        <use xlink:href="#icon-logo_behance_border"></use>
+                    </svg>
+                </a>
 
-    <div class="wrapper">
-        <div class="footer_copyright">
-            <a href="index.html">Félix Vallée © - 2022</a>
+                <a href="https://www.instagram.com/flxvallee/?hl=fr" target="_blank" aria-label="Profil Instagram">
+                    <svg class="icon">
+                        <use xlink:href="#icon-logo_instagram_border"></use>
+                    </svg>
+                </a>
+
+                <a href="https://www.linkedin.com/in/felix-vallee/" target="_blank" aria-label="Profil LinkedIn">
+                    <svg class="icon">
+                        <use xlink:href="#icon-logo_linkedin"></use>
+                    </svg>
+                </a>
+
+            </div>
         </div>
 
-        <div class="footer_reseaux">
-
-            <a href="https://www.behance.net/felixvallee" target="_blank" aria-label="Profil Behance">
-                <svg class="icon">
-                    <use xlink:href="#icon-logo_behance_border"></use>
-                </svg>
-            </a>
-
-            <a href="https://www.instagram.com/flxvallee/?hl=fr" target="_blank" aria-label="Profil Instagram">
-                <svg class="icon">
-                    <use xlink:href="#icon-logo_instagram_border"></use>
-                </svg>
-            </a>
-
-            <a href="https://www.linkedin.com/in/felix-vallee/" target="_blank" aria-label="Profil LinkedIn">
-                <svg class="icon">
-                    <use xlink:href="#icon-logo_linkedin"></use>
-                </svg>
-            </a>
-
-        </div>
-    </div>
 
 
-
-</footer>
+    </footer>
 
 
 </body>

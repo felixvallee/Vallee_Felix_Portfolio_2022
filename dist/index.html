@@ -22,10 +22,19 @@
     <link rel="stylesheet" href="styles/main.css" />
 
     <script src="scripts/main.js" defer></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-91DB7R7RVH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-91DB7R7RVH");
+    </script>
 </head>
-
-
-
 
 <body data-component="Scrolly">
     <header class="header" data-component="Header">
@@ -37,17 +46,23 @@
             </a>
             <nav class="nav-primary">
                 <ul>
-                    <li><a href="index.html" class="hover nav-primary__item">Accueil</a></li>
-                    <li><a href="projets.html" class="hover nav-primary__item">Mes projets</a></li>
                     <li>
-
+                        <a href="index.html" class="hover nav-primary__item">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="projets.html" class="hover nav-primary__item">Mes projets</a>
+                    </li>
+                    <li>
                         <svg class="icon">
                             <use xlink:href="#icon-Logo_FLX"></use>
                         </svg>
-
                     </li>
-                    <li><a href="propos.html" class="hover nav-primary__item">À propos</a></li>
-                    <li><a href="contact.html" class="hover nav-primary__item">Contactez-moi</a></li>
+                    <li>
+                        <a href="propos.html" class="hover nav-primary__item">À propos</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="hover nav-primary__item">Contactez-moi</a>
+                    </li>
                 </ul>
             </nav>
             <button class="header__toggle js-toggle">
@@ -57,70 +72,68 @@
             </button>
         </div>
     </header>
-</body>
-
-</html>
 
 
-<div class="hero_accueil" data-component="Scrolly">
-    <div class="wrapper">
-        <div class="hero_media" data-scrolly="fromBottom">
-            <div class="hero_image">
-                <video loop="loop" autoplay="autoplay" muted playsinline class="exemple_video" src="assets/video/Composition Finale_2.mp4"></video>
-            </div>
-            <div class="hero_cadre"></div>
-            <div class="hero_content">
-                <h1>Félix Vallée</h1>
-                <h2>Aspirant designer</h2>
-                <div class="button_accueil">
-                    <a href="projets.html">Découvrir mes projets</a>
 
-                    <hr class="under_projets" />
+    <div class="hero_accueil" data-component="Scrolly">
+        <div class="wrapper">
+            <div class="hero_media" data-scrolly="fromBottom">
+                <div class="hero_image">
+                    <video loop="loop" autoplay="autoplay" muted playsinline class="exemple_video" src="assets/video/Composition Finale_2.mp4"></video>
                 </div>
+                <div class="hero_cadre"></div>
+                <div class="hero_content">
+                    <h1>Félix Vallée</h1>
+                    <h2>Aspirant designer</h2>
+                    <div class="button_accueil">
+                        <a href="projets.html">Découvrir mes projets</a>
 
-                <div class="button_accueil">
-                    <a href="propos.html">Me découvrir</a>
+                        <hr class="under_projets" />
+                    </div>
 
-                    <hr class="under_decouvrir" />
+                    <div class="button_accueil">
+                        <a href="propos.html">Me découvrir</a>
+
+                        <hr class="under_decouvrir" />
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<footer>
+    <footer>
 
-    <div class="wrapper">
-        <div class="footer_copyright">
-            <a href="index.html">Félix Vallée © - 2022</a>
+        <div class="wrapper">
+            <div class="footer_copyright">
+                <a href="index.html">Félix Vallée © - 2022</a>
+            </div>
+
+            <div class="footer_reseaux">
+
+                <a href="https://www.behance.net/felixvallee" target="_blank" aria-label="Profil Behance">
+                    <svg class="icon">
+                        <use xlink:href="#icon-logo_behance_border"></use>
+                    </svg>
+                </a>
+
+                <a href="https://www.instagram.com/flxvallee/?hl=fr" target="_blank" aria-label="Profil Instagram">
+                    <svg class="icon">
+                        <use xlink:href="#icon-logo_instagram_border"></use>
+                    </svg>
+                </a>
+
+                <a href="https://www.linkedin.com/in/felix-vallee/" target="_blank" aria-label="Profil LinkedIn">
+                    <svg class="icon">
+                        <use xlink:href="#icon-logo_linkedin"></use>
+                    </svg>
+                </a>
+
+            </div>
         </div>
 
-        <div class="footer_reseaux">
-
-            <a href="https://www.behance.net/felixvallee" target="_blank" aria-label="Profil Behance">
-                <svg class="icon">
-                    <use xlink:href="#icon-logo_behance_border"></use>
-                </svg>
-            </a>
-
-            <a href="https://www.instagram.com/flxvallee/?hl=fr" target="_blank" aria-label="Profil Instagram">
-                <svg class="icon">
-                    <use xlink:href="#icon-logo_instagram_border"></use>
-                </svg>
-            </a>
-
-            <a href="https://www.linkedin.com/in/felix-vallee/" target="_blank" aria-label="Profil LinkedIn">
-                <svg class="icon">
-                    <use xlink:href="#icon-logo_linkedin"></use>
-                </svg>
-            </a>
-
-        </div>
-    </div>
 
 
-
-</footer>
+    </footer>
 
 
 </body>
