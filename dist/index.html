@@ -1,128 +1,48 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="msapplication-config" content="../assets/images/browserconfig.xml" />
-    <meta name="theme-color" content="#ffffff" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Bienvenue sur mon portofolio, profitez de votre visite pour parcourir les divers projets que j'ai pu réaliser jusqu'à présent !" />
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png" />
-    <link rel="manifest" href="../assets/images/site.webmanifest" />
-    <link rel="mask-icon" href="../assets/images/safari-pinned-tab.svg" color="#5bbad5" />
-    <link rel="shortcut icon" href="../assets/images/favicon.ico" />
-
-    <title>Félix Vallée - Portfolio</title>
-
-    <link rel="stylesheet" href="styles/main.css" />
-
-    <script src="scripts/main.js" defer></script>
-</head>
-
-
-
-
 <body data-component="Scrolly">
-    <header class="header" data-component="Header">
-        <div class="wrapper">
-            <a href="index.html" class="header__brand">
-                <svg class="icon">
-                    <use xlink:href="#icon-Logo_FLX"></use>
-                </svg>
-            </a>
-            <nav class="nav-primary">
-                <ul>
-                    <li><a href="index.html" class="hover nav-primary__item">Accueil</a></li>
-                    <li><a href="projets.html" class="hover nav-primary__item">Mes projets</a></li>
-                    <li>
 
-                        <svg class="icon">
-                            <use xlink:href="#icon-Logo_FLX"></use>
-                        </svg>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="msapplication-config" content="../assets/images/browserconfig.xml" />
+        <meta name="theme-color" content="#ffffff" />
 
-                    </li>
-                    <li><a href="propos.html" class="hover nav-primary__item">À propos</a></li>
-                    <li><a href="contact.html" class="hover nav-primary__item">Contactez-moi</a></li>
-                </ul>
-            </nav>
-            <button class="header__toggle js-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </header>
-</body>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Bienvenue sur mon portofolio !" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png" />
+        <link rel="manifest" href="../assets/images/site.webmanifest" />
+        <link rel="mask-icon" href="../assets/images/safari-pinned-tab.svg" color="#5bbad5" />
+        <link rel="shortcut icon" href="../assets/images/favicon.ico" />
 
-</html>
+        <title>Félix Vallée - Portfolio</title>
 
+        <link rel="stylesheet" href="styles/main.css" />
 
-<div class="hero_accueil" data-component="Scrolly">
-    <div class="wrapper">
-        <div class="hero_media" data-scrolly="fromBottom">
-            <div class="hero_image">
-                <video loop="loop" autoplay="autoplay" muted playsinline class="exemple_video" src="assets/video/Composition Finale_2.mp4"></video>
-            </div>
-            <div class="hero_cadre"></div>
-            <div class="hero_content">
-                <h1>Félix Vallée</h1>
-                <h2>Aspirant designer</h2>
-                <div class="button_accueil">
-                    <a href="projets.html">Découvrir mes projets</a>
+        <script src="scripts/main.js" defer></script>
+    </head>
 
-                    <hr class="under_projets" />
-                </div>
-
-                <div class="button_accueil">
-                    <a href="propos.html">Me découvrir</a>
-
-                    <hr class="under_decouvrir" />
-                </div>
+    <div class="hero_index">
+        <div class="content">
+            <h1>Félix</h1>
+            <h2>Vallée</h2>
+            <h3>Designer Web Junior</h3>
+            <div class="social" data-scrolly="fromBottom">
+                <a href="https://www.behance.net/felixvallee" target="_blank"><svg class="icon">
+                        <use xlink:href="#icon-behance-square"></use>
+                    </svg></a>
+                <a href="https://www.linkedin.com/in/felix-vallee/" target="_blank"><svg class="icon">
+                        <use xlink:href="#icon-linkedin-square"></use>
+                    </svg></a>
+                <a href="https://www.instagram.com/flxvallee/" target="_blank"><svg class="icon">
+                        <use xlink:href="#icon-instagram(2)"></use>
+                    </svg></a>
             </div>
         </div>
     </div>
-</div>
-
-<footer>
-
-    <div class="wrapper">
-        <div class="footer_copyright">
-            <a href="index.html">Félix Vallée © - 2022</a>
-        </div>
-
-        <div class="footer_reseaux">
-
-            <a href="https://www.behance.net/felixvallee" target="_blank" aria-label="Profil Behance">
-                <svg class="icon">
-                    <use xlink:href="#icon-logo_behance_border"></use>
-                </svg>
-            </a>
-
-            <a href="https://www.instagram.com/flxvallee/?hl=fr" target="_blank" aria-label="Profil Instagram">
-                <svg class="icon">
-                    <use xlink:href="#icon-logo_instagram_border"></use>
-                </svg>
-            </a>
-
-            <a href="https://www.linkedin.com/in/felix-vallee/" target="_blank" aria-label="Profil LinkedIn">
-                <svg class="icon">
-                    <use xlink:href="#icon-logo_linkedin"></use>
-                </svg>
-            </a>
-
-        </div>
-    </div>
-
-
-
-</footer>
-
-
 </body>
 
 </html>
