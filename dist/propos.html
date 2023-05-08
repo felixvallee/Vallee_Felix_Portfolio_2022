@@ -22,10 +22,19 @@
     <link rel="stylesheet" href="styles/main.css" />
 
     <script src="scripts/main.js" defer></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-91DB7R7RVH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-91DB7R7RVH");
+    </script>
 </head>
-
-
-
 
 <body data-component="Scrolly">
     <header class="header" data-component="Header">
@@ -37,17 +46,23 @@
             </a>
             <nav class="nav-primary">
                 <ul>
-                    <li><a href="index.html" class="hover nav-primary__item">Accueil</a></li>
-                    <li><a href="projets.html" class="hover nav-primary__item">Mes projets</a></li>
                     <li>
-
+                        <a href="index.html" class="hover nav-primary__item">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="projets.html" class="hover nav-primary__item">Mes projets</a>
+                    </li>
+                    <li>
                         <svg class="icon">
                             <use xlink:href="#icon-Logo_FLX"></use>
                         </svg>
-
                     </li>
-                    <li><a href="propos.html" class="hover nav-primary__item">À propos</a></li>
-                    <li><a href="contact.html" class="hover nav-primary__item">Contactez-moi</a></li>
+                    <li>
+                        <a href="propos.html" class="hover nav-primary__item">À propos</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="hover nav-primary__item">Contactez-moi</a>
+                    </li>
                 </ul>
             </nav>
             <button class="header__toggle js-toggle">
@@ -57,228 +72,226 @@
             </button>
         </div>
     </header>
-</body>
-
-</html>
 
 
-<div class="propos">
-    <div class="wrapper">
-        <div class="hero_propos_content">
-            <div class="hero_content" data-scrolly="fromLeft">
-                <h1>Félix Vallée</h1>
-                <h2>Aspirant designer</h2>
-                <p>
-                    Oyé oyé ! Du haut de mes 24 ans, j’aspire à devenir
-                    <span>designer</span> après 5 ans d’errances collégiales. En jetant
-                    mon ancre sur les rives du programme
-                    <span> Techniques d’intégration multimédia</span>, j’ai pu renouer
-                    avec le Félix <span> curieux, enjoué et déterminé.</span>
-                </p>
-                <svg class="icon">
-                    <use xlink:href="#icon-arrow_down"></use>
-                </svg>
-            </div>
-            <div class="hero_media" data-scrolly="fromRight">
-                <div class="hero_image">
-                    <img src="assets/images/Image_Felix_Propos.png" alt="" />
-                </div>
-                <div class="hero_cadre"></div>
-            </div>
-        </div>
 
-        <section>
-            <div class="modus">
-                <hr />
-                <h3>J’aborde les journées avec 3 modus operandi :</h3>
-                <div class="left" data-scrolly="fromLeft">
-                    <h4>« Entrain quotidien, pimente le train-train quotidien. »</h4>
-                </div>
-                <div class="center" data-scrolly="fromLeft">
-                    <h4>« Curiosité inachevée rime avec infinité de possibilités. »</h4>
-                </div>
-                <div class="right" data-scrolly="fromLeft">
+    <div class="propos">
+        <div class="wrapper">
+            <div class="hero_propos_content">
+                <div class="hero_content" data-scrolly="fromLeft">
+                    <h1>Félix Vallée</h1>
+                    <h2>Aspirant designer</h2>
+                    <p>
+                        Oyé oyé ! Du haut de mes 24 ans, j’aspire à devenir
+                        <span>designer</span> après 5 ans d’errances collégiales. En jetant
+                        mon ancre sur les rives du programme
+                        <span> Techniques d’intégration multimédia</span>, j’ai pu renouer
+                        avec le Félix <span> curieux, enjoué et déterminé.</span>
+                    </p>
                     <svg class="icon">
                         <use xlink:href="#icon-arrow_down"></use>
                     </svg>
-                    <h4>« Détermination s’associe avant tout à passion. »</h4>
+                </div>
+                <div class="hero_media" data-scrolly="fromRight">
+                    <div class="hero_image">
+                        <img src="assets/images/Image_Felix_Propos.png" alt="" />
+                    </div>
+                    <div class="hero_cadre"></div>
                 </div>
             </div>
-        </section>
 
-        <section>
-            <div class="competences">
-                <div class="cards" data-scrolly="fromLeft">
-                    <div class="card_texte">
-                        <p>
-                            Les champs de compétences que j’ai pu développer durant ma
-                            formation
-                        </p>
+            <section>
+                <div class="modus">
+                    <hr />
+                    <h3>J’aborde les journées avec 3 modus operandi :</h3>
+                    <div class="left" data-scrolly="fromLeft">
+                        <h4>« Entrain quotidien, pimente le train-train quotidien. »</h4>
                     </div>
-                    <div class="card_competence">
+                    <div class="center" data-scrolly="fromLeft">
+                        <h4>« Curiosité inachevée rime avec infinité de possibilités. »</h4>
+                    </div>
+                    <div class="right" data-scrolly="fromLeft">
                         <svg class="icon">
-                            <use xlink:href="#icon-icone_design"></use>
+                            <use xlink:href="#icon-arrow_down"></use>
                         </svg>
-                        <p>Design</p>
+                        <h4>« Détermination s’associe avant tout à passion. »</h4>
                     </div>
-                    <div class="card_competence">
-                        <svg class="icon">
-                            <use xlink:href="#icon-icone_integration"></use>
-                        </svg>
-                        <p>Intégration HTML/CSS</p>
-                    </div>
-                    <div class="card_competence">
-                        <svg class="icon">
-                            <use xlink:href="#icon-icone_animation"></use>
-                        </svg>
-                        <p>Animation</p>
-                    </div>
-
-                    <div class="border_competence_left"></div>
                 </div>
+            </section>
 
-                <div class="cards" data-scrolly="fromRight">
-                    <div class="card_competence">
-                        <svg class="icon">
-                            <use xlink:href="#icon-logo_figma"></use>
-                        </svg>
-                        <svg class="icon">
-                            <use xlink:href="#icon-logo_premiere"></use>
-                        </svg>
-                        <svg class="icon">
-                            <use xlink:href="#icon-logo_photoshop"></use>
-                        </svg>
-                        <svg class="icon">
-                            <use xlink:href="#icon-logo_illustrator"></use>
-                        </svg>
-                        <svg class="icon">
-                            <use xlink:href="#icon-logo_blender"></use>
-                        </svg>
-                        <svg class="icon">
-                            <use xlink:href="#icon-logo_visual"></use>
-                        </svg>
-                        <svg class="icon">
-                            <use xlink:href="#icon-logo_webstorm"></use>
-                        </svg>
-                    </div>
-                    <div class="card_texte">
-                        <p>Les logiciels avec lesquels je m’entends pas trop mal !</p>
+            <section>
+                <div class="competences">
+                    <div class="cards" data-scrolly="fromLeft">
+                        <div class="card_texte">
+                            <p>
+                                Les champs de compétences que j’ai pu développer durant ma
+                                formation
+                            </p>
+                        </div>
+                        <div class="card_competence">
+                            <svg class="icon">
+                                <use xlink:href="#icon-icone_design"></use>
+                            </svg>
+                            <p>Design</p>
+                        </div>
+                        <div class="card_competence">
+                            <svg class="icon">
+                                <use xlink:href="#icon-icone_integration"></use>
+                            </svg>
+                            <p>Intégration HTML/CSS</p>
+                        </div>
+                        <div class="card_competence">
+                            <svg class="icon">
+                                <use xlink:href="#icon-icone_animation"></use>
+                            </svg>
+                            <p>Animation</p>
+                        </div>
+
+                        <div class="border_competence_left"></div>
                     </div>
 
-                    <div class="border_competence_right"></div>
+                    <div class="cards" data-scrolly="fromRight">
+                        <div class="card_competence">
+                            <svg class="icon">
+                                <use xlink:href="#icon-logo_figma"></use>
+                            </svg>
+                            <svg class="icon">
+                                <use xlink:href="#icon-logo_premiere"></use>
+                            </svg>
+                            <svg class="icon">
+                                <use xlink:href="#icon-logo_photoshop"></use>
+                            </svg>
+                            <svg class="icon">
+                                <use xlink:href="#icon-logo_illustrator"></use>
+                            </svg>
+                            <svg class="icon">
+                                <use xlink:href="#icon-logo_blender"></use>
+                            </svg>
+                            <svg class="icon">
+                                <use xlink:href="#icon-logo_visual"></use>
+                            </svg>
+                            <svg class="icon">
+                                <use xlink:href="#icon-logo_webstorm"></use>
+                            </svg>
+                        </div>
+                        <div class="card_texte">
+                            <p>Les logiciels avec lesquels je m’entends pas trop mal !</p>
+                        </div>
+
+                        <div class="border_competence_right"></div>
+                    </div>
+
+                    <div class="cards" data-scrolly="fromLeft">
+                        <div class="card_texte">
+                            <p>Mes passions de tous les jours</p>
+                        </div>
+                        <div class="card_competence">
+                            <svg class="icon">
+                                <use xlink:href="#icon-icone_medias"></use>
+                            </svg>
+                            <p>Les multiples médias</p>
+                            <span>
+                                <p>Badum tsss</p>
+                            </span>
+                        </div>
+                        <div class="card_competence">
+                            <svg class="icon">
+                                <use xlink:href="#icon-icone_ecriture"></use>
+                            </svg>
+                            <p>Lecture / écriture</p>
+                        </div>
+                        <div class="card_competence">
+                            <svg class="icon">
+                                <use xlink:href="#icon-icone_social"></use>
+                            </svg>
+                            <p>Les sciences sociales</p>
+                        </div>
+
+                        <div class="border_competence_left"></div>
+                    </div>
                 </div>
+            </section>
 
-                <div class="cards" data-scrolly="fromLeft">
-                    <div class="card_texte">
-                        <p>Mes passions de tous les jours</p>
-                    </div>
-                    <div class="card_competence">
-                        <svg class="icon">
-                            <use xlink:href="#icon-icone_medias"></use>
-                        </svg>
-                        <p>Les multiples médias</p>
-                        <span>
-                            <p>Badum tsss</p>
-                        </span>
-                    </div>
-                    <div class="card_competence">
-                        <svg class="icon">
-                            <use xlink:href="#icon-icone_ecriture"></use>
-                        </svg>
-                        <p>Lecture / écriture</p>
-                    </div>
-                    <div class="card_competence">
-                        <svg class="icon">
-                            <use xlink:href="#icon-icone_social"></use>
-                        </svg>
-                        <p>Les sciences sociales</p>
-                    </div>
-
-                    <div class="border_competence_left"></div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="experience" data-scrolly="fromBottom">
-                <h3>C’est bien beau tout ça, mais pourquoi donc ?</h3>
-                <h4>
-                    Car j’aspire à un <span>stage</span> et une <span>carrière</span> en
-                    <span>design.</span>
-                </h4>
-            </div>
-        </section>
-
-        <section>
-            <div class="apprentissage">
-                <hr />
-                <h3>Ce que j’espère retirer de ces expériences :</h3>
-                <div class="left" data-scrolly="fromLeft">
+            <section>
+                <div class="experience" data-scrolly="fromBottom">
+                    <h3>C’est bien beau tout ça, mais pourquoi donc ?</h3>
                     <h4>
-                        Façonner mes compétences encore brute et les appliquer dans un
-                        contexte professionnel
+                        Car j’aspire à un <span>stage</span> et une <span>carrière</span> en
+                        <span>design.</span>
                     </h4>
                 </div>
-                <div class="center" data-scrolly="fromLeft">
-                    <h4>
-                        Apprendre à me concentrer sur mes tâches et travailler plus
-                        efficacement
-                    </h4>
+            </section>
+
+            <section>
+                <div class="apprentissage">
+                    <hr />
+                    <h3>Ce que j’espère retirer de ces expériences :</h3>
+                    <div class="left" data-scrolly="fromLeft">
+                        <h4>
+                            Façonner mes compétences encore brute et les appliquer dans un
+                            contexte professionnel
+                        </h4>
+                    </div>
+                    <div class="center" data-scrolly="fromLeft">
+                        <h4>
+                            Apprendre à me concentrer sur mes tâches et travailler plus
+                            efficacement
+                        </h4>
+                    </div>
+                    <div class="right" data-scrolly="fromLeft">
+                        <svg class="icon">
+                            <use xlink:href="#icon-arrow_down"></use>
+                        </svg>
+                        <h4>
+                            Garder un esprit curieux vis à vis toutes les disciplines du
+                            multimédia
+                        </h4>
+                    </div>
                 </div>
-                <div class="right" data-scrolly="fromLeft">
+            </section>
+            <section>
+                <div class="video_propos" data-scrolly="fromBottom">
+                    <hr />
+                    <h3>Vidéo de présentation :</h3>
+                    <video controls playsinline poster="assets/images/Image_Felix_Presentation.jpg" class="exemple_video" src="assets/video/Vallee_Felix_Presentation_V4_compressed.mp4"></video>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+
+        <div class="wrapper">
+            <div class="footer_copyright">
+                <a href="index.html">Félix Vallée © - 2022</a>
+            </div>
+
+            <div class="footer_reseaux">
+
+                <a href="https://www.behance.net/felixvallee" target="_blank" aria-label="Profil Behance">
                     <svg class="icon">
-                        <use xlink:href="#icon-arrow_down"></use>
+                        <use xlink:href="#icon-logo_behance_border"></use>
                     </svg>
-                    <h4>
-                        Garder un esprit curieux vis à vis toutes les disciplines du
-                        multimédia
-                    </h4>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="video_propos" data-scrolly="fromBottom">
-                <hr />
-                <h3>Vidéo de présentation :</h3>
-                <video controls playsinline poster="assets/images/Image_Felix_Presentation.jpg" class="exemple_video" src="assets/video/Vallee_Felix_Presentation_V4_compressed.mp4"></video>
-            </div>
-        </section>
-    </div>
-</div>
+                </a>
 
-<footer>
+                <a href="https://www.instagram.com/flxvallee/?hl=fr" target="_blank" aria-label="Profil Instagram">
+                    <svg class="icon">
+                        <use xlink:href="#icon-logo_instagram_border"></use>
+                    </svg>
+                </a>
 
-    <div class="wrapper">
-        <div class="footer_copyright">
-            <a href="index.html">Félix Vallée © - 2022</a>
+                <a href="https://www.linkedin.com/in/felix-vallee/" target="_blank" aria-label="Profil LinkedIn">
+                    <svg class="icon">
+                        <use xlink:href="#icon-logo_linkedin"></use>
+                    </svg>
+                </a>
+
+            </div>
         </div>
 
-        <div class="footer_reseaux">
-
-            <a href="https://www.behance.net/felixvallee" target="_blank" aria-label="Profil Behance">
-                <svg class="icon">
-                    <use xlink:href="#icon-logo_behance_border"></use>
-                </svg>
-            </a>
-
-            <a href="https://www.instagram.com/flxvallee/?hl=fr" target="_blank" aria-label="Profil Instagram">
-                <svg class="icon">
-                    <use xlink:href="#icon-logo_instagram_border"></use>
-                </svg>
-            </a>
-
-            <a href="https://www.linkedin.com/in/felix-vallee/" target="_blank" aria-label="Profil LinkedIn">
-                <svg class="icon">
-                    <use xlink:href="#icon-logo_linkedin"></use>
-                </svg>
-            </a>
-
-        </div>
-    </div>
 
 
-
-</footer>
+    </footer>
 
 
 </body>
